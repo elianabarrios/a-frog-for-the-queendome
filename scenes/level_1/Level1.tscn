@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/level/running_background.png" type="Texture" id=1]
+
+[node name="Level1" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Level1Background" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 960.06, 546.806 )
+texture = ExtResource( 1 )
