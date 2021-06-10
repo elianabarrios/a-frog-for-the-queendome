@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Scenes"
+run/main_scene="res://scenes/menu/Menu.tscn"
 
 [display]
 
