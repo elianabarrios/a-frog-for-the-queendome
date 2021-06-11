@@ -12,28 +12,33 @@ position = Vector2( 962.58, 541.766 )
 texture = ExtResource( 2 )
 
 [node name="Peluda" type="TextureButton" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 1322.0
+margin_top = 332.0
+margin_right = 2021.0
+margin_bottom = 1401.0
+rect_scale = Vector2( 0.4, 0.4 )
 texture_normal = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Prospera" type="TextureButton" parent="."]
-margin_left = 655.159
-margin_top = -83.1548
-margin_right = 1276.16
-margin_bottom = 1149.85
+margin_left = 837.159
+margin_top = 328.845
+margin_right = 1458.16
+margin_bottom = 1561.85
+rect_scale = Vector2( 0.4, 0.4 )
 texture_normal = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Perpetua" type="TextureButton" parent="."]
-margin_left = 1300.24
-margin_top = -103.313
-margin_right = 1915.24
-margin_bottom = 1246.69
+margin_left = 334.24
+margin_top = 286.687
+margin_right = 949.24
+margin_bottom = 1636.69
+rect_scale = Vector2( 0.4, 0.4 )
 texture_normal = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
