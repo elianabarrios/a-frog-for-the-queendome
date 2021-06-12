@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/characters/princess/peluda.png" type="Texture" id=1]
 [ext_resource path="res://assets/level/background_grass.png" type="Texture" id=2]
 [ext_resource path="res://assets/characters/princess/perpetua.png" type="Texture" id=3]
 [ext_resource path="res://assets/characters/princess/prospera.png" type="Texture" id=4]
 [ext_resource path="res://scenes/player_select/PlayerSelect.gd" type="Script" id=5]
+[ext_resource path="res://assets/ui/text_tree.png" type="Texture" id=6]
+[ext_resource path="res://assets/ui/text_two.png" type="Texture" id=7]
+[ext_resource path="res://assets/ui/text_one.png" type="Texture" id=8]
+[ext_resource path="res://assets/fonts/new_dynamicfont.tres" type="DynamicFont" id=9]
 
 [node name="PlayerSelect" type="Node2D"]
 script = ExtResource( 5 )
@@ -14,10 +18,10 @@ position = Vector2( 962.58, 541.766 )
 texture = ExtResource( 2 )
 
 [node name="Peluda" type="TextureButton" parent="."]
-margin_left = 1322.0
-margin_top = 332.0
-margin_right = 2021.0
-margin_bottom = 1401.0
+margin_left = 1332.0
+margin_top = 526.0
+margin_right = 2031.0
+margin_bottom = 1595.0
 rect_scale = Vector2( 0.4, 0.4 )
 texture_normal = ExtResource( 1 )
 __meta__ = {
@@ -25,10 +29,10 @@ __meta__ = {
 }
 
 [node name="Prospera" type="TextureButton" parent="."]
-margin_left = 837.159
-margin_top = 328.845
-margin_right = 1458.16
-margin_bottom = 1561.85
+margin_left = 845.159
+margin_top = 468.845
+margin_right = 1466.16
+margin_bottom = 1701.85
 rect_scale = Vector2( 0.4, 0.4 )
 texture_normal = ExtResource( 4 )
 __meta__ = {
@@ -36,12 +40,74 @@ __meta__ = {
 }
 
 [node name="Perpetua" type="TextureButton" parent="."]
-margin_left = 334.24
-margin_top = 286.687
-margin_right = 949.24
-margin_bottom = 1636.69
+margin_left = 270.24
+margin_top = 440.687
+margin_right = 885.24
+margin_bottom = 1790.69
 rect_scale = Vector2( 0.4, 0.4 )
 texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text_one" type="Sprite" parent="."]
+position = Vector2( 414, 269.059 )
+scale = Vector2( 0.5, 1 )
+texture = ExtResource( 8 )
+
+[node name="text_two" type="Sprite" parent="text_one"]
+position = Vector2( 1100, 9.99998 )
+texture = ExtResource( 7 )
+
+[node name="text_tree" type="Sprite" parent="text_one"]
+position = Vector2( 2140, 64 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 230.0
+margin_top = 202.0
+margin_right = 599.0
+margin_bottom = 349.0
+custom_fonts/font = ExtResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Perpetua:
+No acepta un NO 
+como respuesta"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 746.0
+margin_top = 186.0
+margin_right = 1189.0
+margin_bottom = 383.0
+custom_fonts/font = ExtResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Próspera:
+siempre encuentra
+el camino del
+mínimo esfuerzo"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 1262.0
+margin_top = 216.0
+margin_right = 1705.0
+margin_bottom = 413.0
+custom_fonts/font = ExtResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Peluda:
+es mujer,
+te lo aseguro"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
