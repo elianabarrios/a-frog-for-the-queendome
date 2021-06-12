@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/level/background_grass.png" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/new_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scenes/introduction/PresentationIntroduction.gd" type="Script" id=3]
 
 [node name="PresentationIntroduction" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="PresentationIntroduction" type="Sprite" parent="."]
 position = Vector2( 960.585, 542.007 )
@@ -24,3 +26,8 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

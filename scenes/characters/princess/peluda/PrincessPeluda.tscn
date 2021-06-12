@@ -21,5 +21,15 @@ shape = SubResource( 1 )
 [node name="PrincessPeludaArea" type="Area2D" parent="."]
 
 [node name="PeludaAreaCollision" type="CollisionShape2D" parent="PrincessPeludaArea"]
+position = Vector2( 2.66968, 0 )
 scale = Vector2( 0.7, 0.7 )
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 706.812, -162.167 )
+current = true
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
