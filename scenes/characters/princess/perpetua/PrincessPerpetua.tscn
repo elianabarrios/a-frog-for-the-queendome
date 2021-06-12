@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/characters/princess/perpetua.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="PrincessPerpetua" type="StaticBody2D"]
+
+[node name="PerpetuaCollision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Perpetua" type="Sprite" parent="."]
+texture = ExtResource( 1 )
