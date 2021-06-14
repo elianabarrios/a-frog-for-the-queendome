@@ -64,10 +64,11 @@ position = Vector2( 2140, 64 )
 texture = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 230.0
-margin_top = 202.0
-margin_right = 599.0
-margin_bottom = 349.0
+margin_left = 210.0
+margin_top = 180.0
+margin_right = 802.0
+margin_bottom = 471.0
+rect_scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Perpetua:
@@ -80,10 +81,11 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 746.0
-margin_top = 186.0
-margin_right = 1189.0
-margin_bottom = 383.0
+margin_left = 748.0
+margin_top = 166.0
+margin_right = 1459.0
+margin_bottom = 555.0
+rect_scale = Vector2( 0.6, 0.6 )
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Próspera:
@@ -97,10 +99,11 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 1262.0
-margin_top = 216.0
-margin_right = 1705.0
-margin_bottom = 413.0
+margin_left = 1318.0
+margin_top = 222.0
+margin_right = 1813.0
+margin_bottom = 513.0
+rect_scale = Vector2( 0.7, 0.7 )
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Peluda:

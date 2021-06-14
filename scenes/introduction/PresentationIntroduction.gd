@@ -6,13 +6,13 @@ func _on_Timer_timeout():
 	timerCount +=1
 	
 	if timerCount ==1:
-		$IntroductionText.text = "Los príncipes combatían en diferentes disciplinas para ganarse el privilegio de desposar a una princesa"
+		$TextContainer/IntroductionText.text = "Los príncipes competían en\n diferentes disciplinas para ganarse\n el privilegio de desposar \na una princesa"
 	if timerCount == 2:
-		$IntroductionText.text = "Pero en este juego y esta época serán las princesas las que se pondrán a prueba para desposar…"
+		$TextContainer/IntroductionText.text = "Pero en este juego y esta época\n serán las princesas las que\n se pondrán a prueba para desposar. . ."
 	if timerCount == 3:
-		$IntroductionText.text = "... un sapo???!"
+		$TextContainer/IntroductionText.text = ". . . un sapo???!"
 	if timerCount == 4:
-		$IntroductionText.text = "Emm… bueno, en realidad sólo lo hacen para poder reinar y el dinero, por supuesto"
+		$TextContainer/IntroductionText.text = "Emm. . . bueno, en realidad\n sólo lo hacen para poder reinar. . .\n y el dinero, por supuesto"
 	
 	if timerCount == 5:
 		get_tree().change_scene("res://scenes/player_select/PlayerSelect.tscn")
