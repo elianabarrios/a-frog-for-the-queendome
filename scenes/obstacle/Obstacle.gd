@@ -21,3 +21,8 @@ func _on_PigArea_area_entered(area):
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 	pass # Replace with function body.
+
+
+func _on_PigArea_area_exited(area):
+	get_tree().call_group("UI","_stop_sound")
+	pass # Replace with function body.

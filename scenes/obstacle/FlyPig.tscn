@@ -32,5 +32,6 @@ shape = SubResource( 2 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 [connection signal="area_entered" from="PiggyArea" to="." method="_on_PiggyArea_area_entered"]
+[connection signal="area_exited" from="PiggyArea" to="." method="_on_PiggyArea_area_exited"]
 [connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

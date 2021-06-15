@@ -23,3 +23,11 @@ func _on_VisibilityNotifier2D_screen_entered():
 func _on_PiggyArea_area_entered(area):
 	get_tree().call_group("UI","_damage")
 	pass # Replace with function body.
+
+
+func _on_PiggyArea_area_exited(area):
+	get_tree().call_group("UI","_stop_sound")
+	pass # Replace with function body.
+
+
+

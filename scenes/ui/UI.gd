@@ -13,6 +13,9 @@ func _go_score_timer():
 	$ScoreTimer.start()
 	pass
 
+func _stop_sound():
+	$Cabasho.stop()
+
 func _damage():
 	$Cabasho.play()
 	GlobalVar.scorePoints -= 10

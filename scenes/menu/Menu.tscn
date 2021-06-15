@@ -42,7 +42,6 @@ script = ExtResource( 6 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-volume_db = 11.107
 
 [node name="MenuBackground" type="Sprite" parent="."]
 position = Vector2( 961.754, 541.207 )
