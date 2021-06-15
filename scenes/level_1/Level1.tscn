@@ -259,16 +259,15 @@ position = Vector2( 483.66, -1.17163 )
 shape = SubResource( 3 )
 
 [node name="EndMessage" type="Label" parent="."]
-margin_left = 50939.5
-margin_top = 258.454
-margin_right = 51339.5
-margin_bottom = 451.454
+margin_left = 50997.8
+margin_top = 260.699
+margin_right = 51397.8
+margin_bottom = 453.699
 rect_scale = Vector2( 1.5, 1.5 )
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "DESAFÍO 
 TERMINADO"
-align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false

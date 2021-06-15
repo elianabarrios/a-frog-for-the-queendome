@@ -14,6 +14,7 @@ func _go_score_timer():
 	pass
 
 func _damage():
+	$Cabasho.play()
 	GlobalVar.scorePoints -= 10
 	$Control/UIContainer/Score.modulate = Color(1,0,0,1)
 
