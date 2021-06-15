@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/obstacle/flying-pig.png" type="Texture" id=1]
+[ext_resource path="res://scenes/obstacle/FlyPig.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 264.134
@@ -9,7 +10,10 @@ radius = 264.134
 radius = 290.638
 
 [node name="FlyPig" type="KinematicBody2D"]
-scale = Vector2( 0.6, 0.6 )
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 0
+collision_mask = 0
+script = ExtResource( 2 )
 
 [node name="CoolPiggy" type="Sprite" parent="."]
 scale = Vector2( 0.7, 0.7 )
@@ -20,9 +24,13 @@ scale = Vector2( 0.7, 0.7 )
 shape = SubResource( 1 )
 
 [node name="PiggyArea" type="Area2D" parent="."]
+collision_layer = 2
 
 [node name="PiggyAreaCollision" type="CollisionShape2D" parent="PiggyArea"]
 scale = Vector2( 0.7, 0.7 )
 shape = SubResource( 2 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+[connection signal="area_entered" from="PiggyArea" to="." method="_on_PiggyArea_area_entered"]
+[connection signal="screen_entered" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

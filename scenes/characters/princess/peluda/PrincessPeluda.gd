@@ -22,5 +22,6 @@ func _physics_process(delta):
 
 
 func _on_Timer_timeout():
+	get_tree().call_group("UI","_go_score_timer")
 	levelStart = true
 	pass

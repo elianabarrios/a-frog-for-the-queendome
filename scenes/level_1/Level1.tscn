@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/level_1/Level1Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/obstacle/Obstacle.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/characters/princess/peluda/PrincessPeluda.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/ui/UI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/obstacle/FlyPig.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Animation" id=1]
@@ -241,4 +242,6 @@ position = Vector2( 43898.9, 298 )
 
 [node name="FlyPig19" parent="." instance=ExtResource( 5 )]
 position = Vector2( 48642, 318 )
+
+[node name="UI" parent="." instance=ExtResource( 4 )]
 [connection signal="timeout" from="Timer" to="PrincessPeluda" method="_on_Timer_timeout"]

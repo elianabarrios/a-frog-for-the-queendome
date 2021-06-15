@@ -11,12 +11,11 @@ func _process(delta):
 
 
 func _on_PigArea_area_entered(area):
-	##ACA DEBERIA LLAMAR A UNA FUNCIÓN EN PLAYER O UI PARA CONTAR LA ALTERACIÓN DEL PUNTAJE
+	get_tree().call_group("UI","_damage")
 	$Pig.play("Pisao")
 	pisao = true
-	
-	## Reproducir sonido, cambiar de animación
 	pass 
+
 
 
 func _on_VisibilityNotifier2D_screen_exited():
