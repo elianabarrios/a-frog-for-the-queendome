@@ -15,10 +15,10 @@ var ProsperaScore
 	
 func _ready():
 	randomize()
-	PerpetuaScore = randi() % 500 +500
+	PerpetuaScore = randi() %400 +500
 	$PerpetuaScore.text = str(PerpetuaScore)
 	randomize()
-	ProsperaScore = randi() % 700 +300
+	ProsperaScore = randi() %300 +600
 	$ProsperaScore.text = str(ProsperaScore)
 	$PeludaScore.text = str(GlobalVar.scorePoints)
 
@@ -26,5 +26,5 @@ func _on_text_two_button_down():
 	if GlobalVar.scorePoints > ProsperaScore and GlobalVar.scorePoints > PerpetuaScore:
 		get_tree().change_scene("res://scenes/ui/WinScreen.tscn")
 	if GlobalVar.scorePoints < ProsperaScore and GlobalVar.scorePoints < PerpetuaScore:
-		get_tree().change_scene("res://scenes/ui/LoseScreen.tscn")
+		get_tree().change_scene("res://scenes/ui/LoseScreen2.tscn")
 	pass # Replace with function body.

@@ -4,10 +4,10 @@
 [ext_resource path="res://scenes/obstacle/FlyPig.gd" type="Script" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 264.134
+radius = 211.237
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 290.638
+radius = 227.573
 
 [node name="FlyPig" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
