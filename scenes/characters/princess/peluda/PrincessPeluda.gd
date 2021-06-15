@@ -3,13 +3,14 @@ extends KinematicBody2D
 var movement = Vector2(500,0)
 var levelStart = false
 var isOnAir = false
+var finalLevel = false
 
 const VECTOR_NORMAL = Vector2(0, -1)
 
 func _ready():
 	pass 
 func _physics_process(delta):
-	if levelStart == true:
+	if levelStart == true and finalLevel == false:
 		movement.y += 30
 		if is_on_floor():
 			movement.y = 0
@@ -22,6 +23,14 @@ func _physics_process(delta):
 
 
 func _on_Timer_timeout():
-	get_tree().call_group("UI","_go_score_timer")
-	levelStart = true
+	if finalLevel == false:
+		get_tree().call_group("UI","_go_score_timer")
+		levelStart = true
+	pass
+
+
+func _on_Area2D_area_entered(area):
+	get_tree().call_group("UI","_stop_timer")
+	finalLevel = true
+	
 	pass

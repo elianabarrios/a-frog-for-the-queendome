@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Scenes"
 run/main_scene="res://scenes/menu/Menu.tscn"
 
+[autoload]
+
+GlobalVar="*res://scenes/global_var/globalVar.gd"
+
 [display]
 
 window/size/width=1920
