@@ -29,6 +29,7 @@ __meta__ = {
 }
 
 [node name="Prospera" type="TextureButton" parent="."]
+modulate = Color( 0.603922, 0.6, 0.6, 1 )
 margin_left = 845.159
 margin_top = 468.845
 margin_right = 1466.16
@@ -40,6 +41,7 @@ __meta__ = {
 }
 
 [node name="Perpetua" type="TextureButton" parent="."]
+modulate = Color( 0.603922, 0.6, 0.6, 1 )
 margin_left = 270.24
 margin_top = 440.687
 margin_right = 885.24
