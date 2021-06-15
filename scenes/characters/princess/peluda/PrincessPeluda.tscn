@@ -27,7 +27,7 @@ scale = Vector2( 0.7, 0.7 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 694.113, -266.935 )
+position = Vector2( 697.288, -301.858 )
 current = true
 limit_smoothed = true
 drag_margin_h_enabled = true

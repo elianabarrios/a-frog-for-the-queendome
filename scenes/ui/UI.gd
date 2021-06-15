@@ -15,7 +15,9 @@ func _go_score_timer():
 	pass
 
 func _stop_sound():
-	$Cabasho.stop()
+	##Esto no sirve de nada :V
+#	$Cabasho.stop()
+	pass
 
 func _damage():
 	$Cabasho.play()
