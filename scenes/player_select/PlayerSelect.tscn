@@ -66,16 +66,17 @@ position = Vector2( 2140, 64 )
 texture = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 210.0
-margin_top = 180.0
-margin_right = 802.0
-margin_bottom = 471.0
-rect_scale = Vector2( 0.7, 0.7 )
+margin_left = 246.0
+margin_top = 172.0
+margin_right = 838.0
+margin_bottom = 561.0
+rect_scale = Vector2( 0.55, 0.55 )
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Perpetua:
 No acepta un NO 
-como respuesta"
+como respuesta
++ resistencia"
 align = 1
 valign = 1
 __meta__ = {
@@ -83,17 +84,18 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 748.0
-margin_top = 166.0
-margin_right = 1459.0
-margin_bottom = 555.0
-rect_scale = Vector2( 0.6, 0.6 )
+margin_left = 772.0
+margin_top = 148.0
+margin_right = 1483.0
+margin_bottom = 635.0
+rect_scale = Vector2( 0.55, 0.55 )
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Próspera:
 siempre encuentra
 el camino del
-mínimo esfuerzo"
+mínimo esfuerzo
++ agilidad"
 align = 1
 valign = 1
 __meta__ = {
@@ -101,16 +103,17 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 1318.0
-margin_top = 222.0
-margin_right = 1813.0
-margin_bottom = 513.0
-rect_scale = Vector2( 0.7, 0.7 )
+margin_left = 1332.0
+margin_top = 210.0
+margin_right = 1827.0
+margin_bottom = 599.0
+rect_scale = Vector2( 0.6, 0.6 )
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Peluda:
 es mujer,
-te lo aseguro"
+te lo aseguro
++ fuerza"
 align = 1
 valign = 1
 __meta__ = {

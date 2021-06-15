@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/level/challenge_one_presentation.png" type="Texture" id=1]
+[ext_resource path="res://assets/menu/play_button.png" type="Texture" id=2]
+[ext_resource path="res://assets/obstacle/pig_sleep.png" type="Texture" id=3]
+[ext_resource path="res://assets/obstacle/pig_pisao.png" type="Texture" id=4]
+[ext_resource path="res://scenes/level_1/PlayButtonLevelOne.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "two",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "one",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "tree",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "four",
+"speed": 1.0
+} ]
+
+[node name="Challenge1Presentation" type="Node2D"]
+
+[node name="BgChallengeOne" type="Sprite" parent="."]
+position = Vector2( 959.318, 538.189 )
+texture = ExtResource( 1 )
+
+[node name="PlayButtonLevelOne" type="TextureButton" parent="."]
+margin_left = 796.0
+margin_top = 790.0
+margin_right = 1476.0
+margin_bottom = 1198.0
+rect_scale = Vector2( 0.6, 0.6 )
+texture_normal = ExtResource( 2 )
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PigPres" type="AnimatedSprite" parent="."]
+position = Vector2( 373.318, 650.189 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "one"
+frame = 1
+playing = true
+
+[node name="PigPres2" type="AnimatedSprite" parent="."]
+position = Vector2( 759.318, 610.189 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "two"
+playing = true
+
+[node name="PigPres3" type="AnimatedSprite" parent="."]
+position = Vector2( 1145.32, 606.189 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "tree"
+frame = 1
+playing = true
+
+[node name="PigPres4" type="AnimatedSprite" parent="."]
+position = Vector2( 1535.32, 652.189 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "four"
+frame = 4
+playing = true
+[connection signal="button_down" from="PlayButtonLevelOne" to="PlayButtonLevelOne" method="_on_PlayButtonLevelOne_button_down"]
