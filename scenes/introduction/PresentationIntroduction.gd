@@ -11,6 +11,7 @@ func _on_Timer_timeout():
 		$TextContainer/IntroductionText.text = "Pero en este juego y esta época\n serán las princesas las que\n se pondrán a prueba para desposar. . ."
 	if timerCount == 3:
 		$TextContainer/IntroductionText.text = ". . . un sapo???!"
+		$EpicMusic.stop()
 		$ComicMusic.play()
 	if timerCount == 4:
 		$TextContainer/IntroductionText.text = "Emm. . . bueno, en realidad\n sólo lo hacen para poder reinar. . .\n y el dinero, por supuesto"

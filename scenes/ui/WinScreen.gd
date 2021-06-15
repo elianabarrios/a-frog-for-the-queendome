@@ -1,7 +1,7 @@
 extends Node2D
 
 
-func _ready():
-	$AudioStreamPlayer.play()
-	pass 
 
+func _ready():
+	$WinSound.play()
+	pass 

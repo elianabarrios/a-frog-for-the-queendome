@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://assets/characters/frog/frog.png" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/new_dynamicfont.tres" type="DynamicFont" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://assets/ui/text_tree.png" type="Texture" id=9]
 [ext_resource path="res://scenes/introduction/SkipBg.gd" type="Script" id=10]
 [ext_resource path="res://assets/music/comic_music.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/music/epic_music.ogg" type="AudioStream" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Nueva Animación"
@@ -133,5 +134,9 @@ __meta__ = {
 [node name="ComicMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 volume_db = 10.097
+
+[node name="EpicMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+autoplay = true
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="button_down" from="SkipBg" to="SkipBg" method="_on_SkipBg_button_down"]

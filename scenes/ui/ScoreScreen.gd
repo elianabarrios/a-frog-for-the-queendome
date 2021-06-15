@@ -14,6 +14,7 @@ var ProsperaScore
 #	$PeludaScore.text = str(GlobalVar.scorePoints)
 	
 func _ready():
+	$ScoreMusic.play()
 	randomize()
 	PerpetuaScore = randi() %400 +500
 	$PerpetuaScore.text = str(PerpetuaScore)

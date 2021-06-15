@@ -43,7 +43,7 @@ __meta__ = {
 [node name="Level1Background" parent="." instance=ExtResource( 1 )]
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 3.0
 autostart = true
 
 [node name="PrincessPeluda" parent="." instance=ExtResource( 3 )]
@@ -56,11 +56,7 @@ playback_speed = 5.0
 anims/run = SubResource( 1 )
 
 [node name="Ground" type="StaticBody2D" parent="."]
-visible = false
 position = Vector2( 7.13525, 52.3251 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="CollisionGround" type="CollisionShape2D" parent="Ground"]
 position = Vector2( 78308.9, 999.101 )
@@ -196,61 +192,55 @@ position = Vector2( 47617.2, 831.814 )
 position = Vector2( 49149.3, 826.427 )
 
 [node name="FlyPig" parent="." instance=ExtResource( 5 )]
-position = Vector2( 6993.24, 313.873 )
+position = Vector2( 7557.68, 328.975 )
 
 [node name="FlyPig2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 9131.21, 311 )
+position = Vector2( 9944.83, 329.877 )
 
 [node name="FlyPig3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 11445.3, 304 )
-
-[node name="FlyPig4" parent="." instance=ExtResource( 5 )]
-position = Vector2( 13017.3, 307 )
+position = Vector2( 12158.9, 330.428 )
 
 [node name="FlyPig5" parent="." instance=ExtResource( 5 )]
-position = Vector2( 14730.1, 303 )
+position = Vector2( 15268.1, 331.316 )
 
 [node name="FlyPig6" parent="." instance=ExtResource( 5 )]
-position = Vector2( 20569.4, 306 )
+position = Vector2( 21339.6, 319.214 )
 
 [node name="FlyPig7" parent="." instance=ExtResource( 5 )]
-position = Vector2( 23143.6, 307 )
+position = Vector2( 23524.9, 308.888 )
 
 [node name="FlyPig8" parent="." instance=ExtResource( 5 )]
-position = Vector2( 26724.8, 303 )
+position = Vector2( 27378, 325.653 )
 
 [node name="FlyPig9" parent="." instance=ExtResource( 5 )]
-position = Vector2( 27869.6, 306 )
+position = Vector2( 28577.5, 315.439 )
 
 [node name="FlyPig10" parent="." instance=ExtResource( 5 )]
-position = Vector2( 29045.1, 298 )
+position = Vector2( 30506.2, 337.643 )
 
 [node name="FlyPig11" parent="." instance=ExtResource( 5 )]
-position = Vector2( 32104.8, 298 )
+position = Vector2( 32812.7, 326.316 )
 
 [node name="FlyPig12" parent="." instance=ExtResource( 5 )]
-position = Vector2( 33886.2, 316 )
+position = Vector2( 34775.3, 342.428 )
 
 [node name="FlyPig13" parent="." instance=ExtResource( 5 )]
-position = Vector2( 36702, 303 )
+position = Vector2( 36932.3, 335.092 )
 
 [node name="FlyPig14" parent="." instance=ExtResource( 5 )]
-position = Vector2( 37945.6, 293 )
+position = Vector2( 38740.3, 340.194 )
 
 [node name="FlyPig15" parent="." instance=ExtResource( 5 )]
-position = Vector2( 41442.3, 306 )
+position = Vector2( 41810.4, 332.428 )
 
 [node name="FlyPig16" parent="." instance=ExtResource( 5 )]
-position = Vector2( 42428.5, 299 )
-
-[node name="FlyPig17" parent="." instance=ExtResource( 5 )]
-position = Vector2( 43212.1, 310 )
+position = Vector2( 44851.2, 306.127 )
 
 [node name="FlyPig18" parent="." instance=ExtResource( 5 )]
-position = Vector2( 43898.9, 298 )
+position = Vector2( 47446.5, 319.357 )
 
 [node name="FlyPig19" parent="." instance=ExtResource( 5 )]
-position = Vector2( 48642, 318 )
+position = Vector2( 50643, 348.204 )
 
 [node name="UI" parent="." instance=ExtResource( 4 )]
 

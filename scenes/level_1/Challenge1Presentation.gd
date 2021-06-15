@@ -1,7 +1,9 @@
 extends Node2D
 
 
-func _ready():
-	$AudioStreamPlayer.play()
-	pass 
 
+
+
+func _ready():
+	$ComicMusicPres.play()
+	pass 

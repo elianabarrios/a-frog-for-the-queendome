@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/characters/princess/peluda.png" type="Texture" id=1]
 [ext_resource path="res://assets/level/background_grass.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/ui/text_two.png" type="Texture" id=7]
 [ext_resource path="res://assets/ui/text_one.png" type="Texture" id=8]
 [ext_resource path="res://assets/fonts/new_dynamicfont.tres" type="DynamicFont" id=9]
+[ext_resource path="res://assets/music/comic_music.ogg" type="AudioStream" id=10]
 
 [node name="PlayerSelect" type="Node2D"]
 script = ExtResource( 5 )
@@ -119,4 +120,7 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ComicSelector" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
 [connection signal="button_down" from="Peluda" to="." method="_on_Peluda_button_down"]

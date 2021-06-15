@@ -24,5 +24,6 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 
 func _on_PigArea_area_exited(area):
+	
 	get_tree().call_group("UI","_stop_sound")
-	pass # Replace with function body.
+	pass 
