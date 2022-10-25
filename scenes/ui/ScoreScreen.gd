@@ -24,7 +24,7 @@ func _ready():
 	$PeludaScore.text = str(GlobalVar.scorePoints)
 
 func _on_text_two_button_down():
-	if GlobalVar.scorePoints > ProsperaScore or GlobalVar.scorePoints > PerpetuaScore:
+	if GlobalVar.scorePoints > ProsperaScore and GlobalVar.scorePoints > PerpetuaScore:
 		get_tree().change_scene("res://scenes/ui/WinScreen.tscn")
 	if GlobalVar.scorePoints < ProsperaScore or GlobalVar.scorePoints < PerpetuaScore:
 		get_tree().change_scene("res://scenes/ui/LoseScreen2.tscn")

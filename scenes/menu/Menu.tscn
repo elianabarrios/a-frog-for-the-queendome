@@ -77,5 +77,6 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="button_down" from="Play" to="Play" method="_on_Play_button_down"]
 [connection signal="button_down" from="Exit" to="Exit" method="_on_Exit_button_down"]
