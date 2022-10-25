@@ -263,8 +263,8 @@ margin_top = 244.985
 margin_right = 51341.7
 margin_bottom = 437.985
 rect_scale = Vector2( 1.5, 1.5 )
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "DESAFÍO 
 TERMINADO"
 align = 1
@@ -290,8 +290,8 @@ margin_left = 123.672
 margin_top = 91.762
 margin_right = 806.672
 margin_bottom = 186.762
-custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 6 )
 text = "tabla de puntajes"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -299,6 +299,7 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )
+
 [connection signal="timeout" from="Timer" to="PrincessPeluda" method="_on_Timer_timeout"]
 [connection signal="area_entered" from="AreaEnd" to="PrincessPeluda" method="_on_Area2D_area_entered"]
 [connection signal="button_down" from="text_tree" to="text_tree" method="_on_text_tree_button_down"]
